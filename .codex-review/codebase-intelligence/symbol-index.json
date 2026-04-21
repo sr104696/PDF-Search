@@ -1,0 +1,490 @@
+{
+  "generated_at": "2026-04-21T22:53:21.863511+00:00",
+  "symbols": {
+    "Qwen Coder's Work/pdf_intelligence/tests/test_flow.py": [
+      {
+        "name": "create_dummy_pdf",
+        "line": 16,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "main",
+        "line": 31,
+        "type": "FunctionDef"
+      }
+    ],
+    "Qwen Coder's Work/pdf_intelligence/src/main.py": [
+      {
+        "name": "main",
+        "line": 27,
+        "type": "FunctionDef"
+      }
+    ],
+    "Qwen Coder's Work/pdf_intelligence/src/utils/file_hash.py": [
+      {
+        "name": "generate_chunk_id",
+        "line": 7,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "generate_doc_id",
+        "line": 23,
+        "type": "FunctionDef"
+      }
+    ],
+    "Qwen Coder's Work/pdf_intelligence/src/utils/synonyms.py": [
+      {
+        "name": "load_synonyms",
+        "line": 11,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "save_synonyms",
+        "line": 27,
+        "type": "FunctionDef"
+      }
+    ],
+    "Qwen Coder's Work/pdf_intelligence/src/search/facets.py": [
+      {
+        "name": "get_facets",
+        "line": 9,
+        "type": "FunctionDef"
+      }
+    ],
+    "Qwen Coder's Work/pdf_intelligence/src/search/query_parser.py": [
+      {
+        "name": "parse_query",
+        "line": 29,
+        "type": "FunctionDef"
+      }
+    ],
+    "Qwen Coder's Work/pdf_intelligence/src/search/stemmer.py": [
+      {
+        "name": "stem_word",
+        "line": 11,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "stem_text",
+        "line": 26,
+        "type": "FunctionDef"
+      }
+    ],
+    "Qwen Coder's Work/pdf_intelligence/src/search/bm25.py": [
+      {
+        "name": "calculate_bm25_scores",
+        "line": 10,
+        "type": "FunctionDef"
+      }
+    ],
+    "Qwen Coder's Work/pdf_intelligence/src/search/searcher.py": [
+      {
+        "name": "execute_search",
+        "line": 11,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "generate_snippet",
+        "line": 128,
+        "type": "FunctionDef"
+      }
+    ],
+    "Qwen Coder's Work/pdf_intelligence/src/ui/app_ui.py": [
+      {
+        "name": "AppUI",
+        "line": 17,
+        "type": "ClassDef"
+      },
+      {
+        "name": "__init__",
+        "line": 20,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "setup_ui",
+        "line": 43,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "toggle_theme",
+        "line": 65,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "build_search_tab",
+        "line": 70,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "build_library_tab",
+        "line": 87,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "add_files",
+        "line": 98,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "_indexing_complete",
+        "line": 126,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "perform_search",
+        "line": 143,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "display_results",
+        "line": 169,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "process",
+        "line": 110,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "do_search",
+        "line": 157,
+        "type": "FunctionDef"
+      }
+    ],
+    "Qwen Coder's Work/pdf_intelligence/src/ui/dialogs.py": [
+      {
+        "name": "show_info",
+        "line": 7,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "show_error",
+        "line": 18,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "ask_yes_no",
+        "line": 29,
+        "type": "FunctionDef"
+      }
+    ],
+    "Qwen Coder's Work/pdf_intelligence/src/ui/styles.py": [
+      {
+        "name": "apply_theme",
+        "line": 7,
+        "type": "FunctionDef"
+      }
+    ],
+    "Qwen Coder's Work/pdf_intelligence/src/core/tokenizer.py": [
+      {
+        "name": "tokenize",
+        "line": 13,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "count_tokens",
+        "line": 28,
+        "type": "FunctionDef"
+      }
+    ],
+    "Qwen Coder's Work/pdf_intelligence/src/core/pdf_parser.py": [
+      {
+        "name": "extract_text_from_pdf",
+        "line": 13,
+        "type": "FunctionDef"
+      }
+    ],
+    "Qwen Coder's Work/pdf_intelligence/src/core/chunker.py": [
+      {
+        "name": "chunk_text",
+        "line": 10,
+        "type": "FunctionDef"
+      }
+    ],
+    "Qwen Coder's Work/pdf_intelligence/src/core/epub_parser.py": [
+      {
+        "name": "extract_text_from_epub",
+        "line": 15,
+        "type": "FunctionDef"
+      }
+    ],
+    "Qwen Coder's Work/pdf_intelligence/src/index/indexer.py": [
+      {
+        "name": "index_file",
+        "line": 15,
+        "type": "FunctionDef"
+      }
+    ],
+    "Qwen Coder's Work/pdf_intelligence/src/index/schema.py": [
+      {
+        "name": "get_db_connection",
+        "line": 11,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "initialize_db",
+        "line": 24,
+        "type": "FunctionDef"
+      }
+    ],
+    "Codex's Work/pdf_intelligence/src/utils/synonyms.py": [
+      {
+        "name": "load_synonyms",
+        "line": 7,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "save_synonyms",
+        "line": 16,
+        "type": "FunctionDef"
+      }
+    ],
+    "Codex's Work/pdf_intelligence/src/search/query_parser.py": [
+      {
+        "name": "parse_query",
+        "line": 23,
+        "type": "FunctionDef"
+      }
+    ],
+    "Codex's Work/pdf_intelligence/src/search/bm25.py": [
+      {
+        "name": "calculate_bm25_scores",
+        "line": 4,
+        "type": "FunctionDef"
+      }
+    ],
+    "Codex's Work/pdf_intelligence/src/search/searcher.py": [
+      {
+        "name": "_escape_fts_term",
+        "line": 5,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "execute_search",
+        "line": 15,
+        "type": "FunctionDef"
+      }
+    ],
+    "pdf_intelligence/tests/test_flow.py": [
+      {
+        "name": "create_dummy_pdf",
+        "line": 11,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "main",
+        "line": 19,
+        "type": "FunctionDef"
+      }
+    ],
+    "pdf_intelligence/src/main.py": [
+      {
+        "name": "main",
+        "line": 10,
+        "type": "FunctionDef"
+      }
+    ],
+    "pdf_intelligence/src/utils/file_hash.py": [
+      {
+        "name": "generate_chunk_id",
+        "line": 3,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "generate_doc_id",
+        "line": 8,
+        "type": "FunctionDef"
+      }
+    ],
+    "pdf_intelligence/src/utils/synonyms.py": [
+      {
+        "name": "load_synonyms",
+        "line": 7,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "save_synonyms",
+        "line": 16,
+        "type": "FunctionDef"
+      }
+    ],
+    "pdf_intelligence/src/search/facets.py": [
+      {
+        "name": "get_facets",
+        "line": 3,
+        "type": "FunctionDef"
+      }
+    ],
+    "pdf_intelligence/src/search/query_parser.py": [
+      {
+        "name": "parse_query",
+        "line": 23,
+        "type": "FunctionDef"
+      }
+    ],
+    "pdf_intelligence/src/search/stemmer.py": [
+      {
+        "name": "stem_word",
+        "line": 7,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "stem_text",
+        "line": 13,
+        "type": "FunctionDef"
+      }
+    ],
+    "pdf_intelligence/src/search/bm25.py": [
+      {
+        "name": "calculate_bm25_scores",
+        "line": 4,
+        "type": "FunctionDef"
+      }
+    ],
+    "pdf_intelligence/src/search/searcher.py": [
+      {
+        "name": "_escape_fts_term",
+        "line": 5,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "execute_search",
+        "line": 15,
+        "type": "FunctionDef"
+      }
+    ],
+    "pdf_intelligence/src/ui/app_ui.py": [
+      {
+        "name": "AppUI",
+        "line": 11,
+        "type": "ClassDef"
+      },
+      {
+        "name": "__init__",
+        "line": 12,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "setup_ui",
+        "line": 24,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "toggle_theme",
+        "line": 45,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "build_search_tab",
+        "line": 49,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "build_library_tab",
+        "line": 65,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "add_files",
+        "line": 75,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "perform_search",
+        "line": 100,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "display_results",
+        "line": 116,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "process",
+        "line": 86,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "do_search",
+        "line": 110,
+        "type": "FunctionDef"
+      }
+    ],
+    "pdf_intelligence/src/ui/dialogs.py": [
+      {
+        "name": "show_info",
+        "line": 3,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "show_error",
+        "line": 6,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "ask_yes_no",
+        "line": 9,
+        "type": "FunctionDef"
+      }
+    ],
+    "pdf_intelligence/src/ui/styles.py": [
+      {
+        "name": "apply_theme",
+        "line": 3,
+        "type": "FunctionDef"
+      }
+    ],
+    "pdf_intelligence/src/core/tokenizer.py": [
+      {
+        "name": "tokenize",
+        "line": 3,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "count_tokens",
+        "line": 7,
+        "type": "FunctionDef"
+      }
+    ],
+    "pdf_intelligence/src/core/pdf_parser.py": [
+      {
+        "name": "extract_text_from_pdf",
+        "line": 7,
+        "type": "FunctionDef"
+      }
+    ],
+    "pdf_intelligence/src/core/chunker.py": [
+      {
+        "name": "chunk_text",
+        "line": 4,
+        "type": "FunctionDef"
+      }
+    ],
+    "pdf_intelligence/src/core/epub_parser.py": [
+      {
+        "name": "extract_text_from_epub",
+        "line": 9,
+        "type": "FunctionDef"
+      }
+    ],
+    "pdf_intelligence/src/index/indexer.py": [
+      {
+        "name": "index_file",
+        "line": 9,
+        "type": "FunctionDef"
+      }
+    ],
+    "pdf_intelligence/src/index/schema.py": [
+      {
+        "name": "get_db_connection",
+        "line": 5,
+        "type": "FunctionDef"
+      },
+      {
+        "name": "initialize_db",
+        "line": 11,
+        "type": "FunctionDef"
+      }
+    ]
+  }
+}

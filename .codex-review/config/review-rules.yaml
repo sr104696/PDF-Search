@@ -1,0 +1,38 @@
+review_profile: assertive
+
+auto_review:
+  enabled: true
+  drafts: false
+  auto_incremental_review: true
+  auto_pause_after_reviewed_commits: 5
+
+severity_rules:
+  critical:
+    - security_vulnerability
+    - data_loss_risk
+    - crash_potential
+  warning:
+    - performance_regression
+    - missing_error_handling
+    - breaking_change_without_test
+  suggestion:
+    - style_inconsistency
+    - missing_docstring
+    - minor_refactor_opportunity
+
+language_specific:
+  python:
+    linters: [ruff, mypy, bandit]
+  javascript:
+    linters: [eslint, prettier]
+
+ignore_paths:
+  - "*.min.js"
+  - "vendor/**"
+  - "tests/fixtures/**"
+
+custom_checks:
+  - name: "No raw SQL in handlers"
+    pattern: "cursor.execute|raw_query"
+    severity: critical
+    message: "Use ORM or parameterized queries"
