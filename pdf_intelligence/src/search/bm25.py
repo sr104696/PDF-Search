@@ -28,7 +28,20 @@ def calculate_bm25_scores(query_terms: list[str], candidate_doc_ids: list[str]) 
     if not avgdl or avgdl == 0:
         avgdl = 1.0
 
+    # Deduplicate while preserving order to reduce redundant SQL placeholders/work.
+    candidate_doc_ids = list(dict.fromkeys(candidate_doc_ids))
     scores = {doc_id: 0.0 for doc_id in candidate_doc_ids}
+
+    placeholders = ','.join(['?'] * len(candidate_doc_ids))
+    # Read document lengths once and reuse for all terms.
+    cursor.execute(
+        f"SELECT id, totalTokens FROM documents WHERE id IN ({placeholders})",
+        candidate_doc_ids
+    )
+    doc_lengths = {
+        row["id"]: (row["totalTokens"] if row["totalTokens"] else 0)
+        for row in cursor.fetchall()
+    }
 
     for term in query_terms:
         # Get document frequency (df) for the term
@@ -45,24 +58,21 @@ def calculate_bm25_scores(query_terms: list[str], candidate_doc_ids: list[str]) 
         if df == 0:
             continue # Term not in corpus
 
-        # Get term frequencies for all candidate docs
-        placeholders = ','.join(['?'] * len(candidate_doc_ids))
+        # Fetch only non-zero frequencies for this term in candidate docs.
         cursor.execute(f"""
-            SELECT d.id as docId, d.totalTokens, tf.freq
-            FROM documents d
-            LEFT JOIN term_freq tf ON d.id = tf.docId AND tf.term = ?
-            WHERE d.id IN ({placeholders})
+            SELECT docId, freq
+            FROM term_freq
+            WHERE term = ? AND docId IN ({placeholders})
         """, [term] + candidate_doc_ids)
 
         for row in cursor.fetchall():
             doc_id = row['docId']
             tf = row['freq'] if row['freq'] else 0
-            doc_len = row['totalTokens'] if row['totalTokens'] else 0
+            doc_len = doc_lengths.get(doc_id, 0)
 
-            if tf > 0:
-                # BM25 Term Frequency weighting
-                tf_weight = (tf * (k1 + 1)) / (tf + k1 * (1 - b + b * (doc_len / avgdl)))
-                scores[doc_id] += idf * tf_weight
+            # BM25 Term Frequency weighting
+            tf_weight = (tf * (k1 + 1)) / (tf + k1 * (1 - b + b * (doc_len / avgdl)))
+            scores[doc_id] += idf * tf_weight
 
     conn.close()
     return scores
