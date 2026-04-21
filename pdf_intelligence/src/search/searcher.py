@@ -2,6 +2,16 @@ from src.index.schema import get_db_connection
 from src.search.query_parser import parse_query
 from src.search.bm25 import calculate_bm25_scores
 
+def _escape_fts_term(term: str) -> str:
+    """
+    Escape an arbitrary query term for FTS5.
+    Using quoted terms avoids malformed MATCH clauses for punctuation-heavy input.
+    """
+    safe = term.replace('"', '""').strip()
+    if not safe:
+        return ""
+    return f'"{safe}"*'
+
 def execute_search(query_string: str, filters: dict = None, top_k: int = 50) -> list[dict]:
     """
     Executes a two-phase search:
@@ -25,16 +35,19 @@ def execute_search(query_string: str, filters: dict = None, top_k: int = 50) -> 
 
     # Terms (using simple OR for broad recall in candidate phase)
     all_terms = parsed["terms"] + parsed["stemmed_terms"] + parsed["expanded_terms"]
-    # Remove duplicates
-    all_terms = list(set(all_terms))
+    # Remove duplicates while preserving order for deterministic query behavior
+    all_terms = list(dict.fromkeys(all_terms))
 
     if all_terms:
         # FTS5 syntax for OR matching of terms
-        term_query = " OR ".join([f"{term}*" for term in all_terms])
-        if fts_queries:
-             fts_queries.append(f"({term_query})")
-        else:
-             fts_queries.append(term_query)
+        safe_terms = [_escape_fts_term(term) for term in all_terms]
+        safe_terms = [term for term in safe_terms if term]
+        if safe_terms:
+            term_query = " OR ".join(safe_terms)
+            if fts_queries:
+                 fts_queries.append(f"({term_query})")
+            else:
+                 fts_queries.append(term_query)
 
     fts_query_string = " AND ".join(fts_queries)
 

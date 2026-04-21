@@ -1,5 +1,5 @@
 import re
-from src.search.stemmer import stem_text
+from src.search.stemmer import stem_word
 from src.utils.synonyms import load_synonyms
 
 # A simple list of english stop words to filter out
@@ -46,7 +46,7 @@ def parse_query(query_string: str) -> dict:
     result["terms"] = filtered_words
 
     # 3. Stemming
-    result["stemmed_terms"] = [stem_text(w)[0] for w in filtered_words] # stem_text returns list
+    result["stemmed_terms"] = [stem_word(w) for w in filtered_words]
 
     # 4. Synonym Expansion (Optional boost)
     synonyms_dict = load_synonyms()
