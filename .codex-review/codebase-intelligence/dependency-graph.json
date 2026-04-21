@@ -1,0 +1,757 @@
+{
+  "generated_at": "2026-04-21T22:53:21.863471+00:00",
+  "nodes": [
+    "Codex's Work/pdf_intelligence/src/search/bm25.py",
+    "Codex's Work/pdf_intelligence/src/search/query_parser.py",
+    "Codex's Work/pdf_intelligence/src/search/searcher.py",
+    "Codex's Work/pdf_intelligence/src/utils/synonyms.py",
+    "Qwen Coder's Work/pdf_intelligence/src/core/chunker.py",
+    "Qwen Coder's Work/pdf_intelligence/src/core/epub_parser.py",
+    "Qwen Coder's Work/pdf_intelligence/src/core/pdf_parser.py",
+    "Qwen Coder's Work/pdf_intelligence/src/core/tokenizer.py",
+    "Qwen Coder's Work/pdf_intelligence/src/index/indexer.py",
+    "Qwen Coder's Work/pdf_intelligence/src/index/schema.py",
+    "Qwen Coder's Work/pdf_intelligence/src/main.py",
+    "Qwen Coder's Work/pdf_intelligence/src/search/bm25.py",
+    "Qwen Coder's Work/pdf_intelligence/src/search/facets.py",
+    "Qwen Coder's Work/pdf_intelligence/src/search/query_parser.py",
+    "Qwen Coder's Work/pdf_intelligence/src/search/searcher.py",
+    "Qwen Coder's Work/pdf_intelligence/src/search/stemmer.py",
+    "Qwen Coder's Work/pdf_intelligence/src/ui/app_ui.py",
+    "Qwen Coder's Work/pdf_intelligence/src/ui/dialogs.py",
+    "Qwen Coder's Work/pdf_intelligence/src/ui/styles.py",
+    "Qwen Coder's Work/pdf_intelligence/src/utils/file_hash.py",
+    "Qwen Coder's Work/pdf_intelligence/src/utils/synonyms.py",
+    "Qwen Coder's Work/pdf_intelligence/tests/test_flow.py",
+    "pdf_intelligence/src/core/chunker.py",
+    "pdf_intelligence/src/core/epub_parser.py",
+    "pdf_intelligence/src/core/pdf_parser.py",
+    "pdf_intelligence/src/core/tokenizer.py",
+    "pdf_intelligence/src/index/indexer.py",
+    "pdf_intelligence/src/index/schema.py",
+    "pdf_intelligence/src/main.py",
+    "pdf_intelligence/src/search/bm25.py",
+    "pdf_intelligence/src/search/facets.py",
+    "pdf_intelligence/src/search/query_parser.py",
+    "pdf_intelligence/src/search/searcher.py",
+    "pdf_intelligence/src/search/stemmer.py",
+    "pdf_intelligence/src/ui/app_ui.py",
+    "pdf_intelligence/src/ui/dialogs.py",
+    "pdf_intelligence/src/ui/styles.py",
+    "pdf_intelligence/src/utils/file_hash.py",
+    "pdf_intelligence/src/utils/synonyms.py",
+    "pdf_intelligence/tests/test_flow.py"
+  ],
+  "edges": [
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/setup.py",
+      "to": "setuptools",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/tests/test_flow.py",
+      "to": "os",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/tests/test_flow.py",
+      "to": "sys",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/tests/test_flow.py",
+      "to": "tempfile",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/tests/test_flow.py",
+      "to": "src.index.indexer",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/tests/test_flow.py",
+      "to": "src.search.searcher",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/tests/test_flow.py",
+      "to": "src.index.schema",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/tests/test_flow.py",
+      "to": "reportlab.pdfgen",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/tests/test_flow.py",
+      "to": "reportlab",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/main.py",
+      "to": "os",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/main.py",
+      "to": "sys",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/main.py",
+      "to": "logging",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/main.py",
+      "to": "tkinter",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/main.py",
+      "to": "src.ui.app_ui",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/utils/file_hash.py",
+      "to": "hashlib",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/utils/constants.py",
+      "to": "os",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/utils/synonyms.py",
+      "to": "json",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/utils/synonyms.py",
+      "to": "os",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/utils/synonyms.py",
+      "to": "typing",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/utils/synonyms.py",
+      "to": "src.utils.constants",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/search/facets.py",
+      "to": "typing",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/search/facets.py",
+      "to": "src.index.schema",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/search/query_parser.py",
+      "to": "re",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/search/query_parser.py",
+      "to": "typing",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/search/query_parser.py",
+      "to": "src.search.stemmer",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/search/query_parser.py",
+      "to": "src.utils.synonyms",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/search/stemmer.py",
+      "to": "snowballstemmer",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/search/stemmer.py",
+      "to": "src.core.tokenizer",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/search/bm25.py",
+      "to": "math",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/search/bm25.py",
+      "to": "typing",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/search/bm25.py",
+      "to": "src.index.schema",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/search/searcher.py",
+      "to": "typing",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/search/searcher.py",
+      "to": "src.index.schema",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/search/searcher.py",
+      "to": "src.search.query_parser",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/search/searcher.py",
+      "to": "src.search.bm25",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/ui/app_ui.py",
+      "to": "tkinter",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/ui/app_ui.py",
+      "to": "tkinter",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/ui/app_ui.py",
+      "to": "threading",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/ui/app_ui.py",
+      "to": "os",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/ui/app_ui.py",
+      "to": "typing",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/ui/app_ui.py",
+      "to": "src.ui.styles",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/ui/app_ui.py",
+      "to": "src.ui.dialogs",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/ui/app_ui.py",
+      "to": "src.index.indexer",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/ui/app_ui.py",
+      "to": "src.search.searcher",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/ui/app_ui.py",
+      "to": "src.index.schema",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/ui/dialogs.py",
+      "to": "tkinter",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/ui/styles.py",
+      "to": "tkinter",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/core/tokenizer.py",
+      "to": "re",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/core/tokenizer.py",
+      "to": "typing",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/core/pdf_parser.py",
+      "to": "os",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/core/pdf_parser.py",
+      "to": "typing",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/core/pdf_parser.py",
+      "to": "pdfplumber",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/core/chunker.py",
+      "to": "re",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/core/chunker.py",
+      "to": "typing",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/core/chunker.py",
+      "to": "src.core.tokenizer",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/core/epub_parser.py",
+      "to": "typing",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/core/epub_parser.py",
+      "to": "ebooklib",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/core/epub_parser.py",
+      "to": "ebooklib",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/core/epub_parser.py",
+      "to": "bs4",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/core/epub_parser.py",
+      "to": "os",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/index/indexer.py",
+      "to": "os",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/index/indexer.py",
+      "to": "typing",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/index/indexer.py",
+      "to": "src.index.schema",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/index/indexer.py",
+      "to": "src.core.pdf_parser",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/index/indexer.py",
+      "to": "src.core.epub_parser",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/index/indexer.py",
+      "to": "src.core.chunker",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/index/indexer.py",
+      "to": "src.utils.file_hash",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/index/indexer.py",
+      "to": "src.core.tokenizer",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/index/schema.py",
+      "to": "sqlite3",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/index/schema.py",
+      "to": "os",
+      "type": "import"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/index/schema.py",
+      "to": "typing",
+      "type": "import_from"
+    },
+    {
+      "from": "Qwen Coder's Work/pdf_intelligence/src/index/schema.py",
+      "to": "src.utils.constants",
+      "type": "import_from"
+    },
+    {
+      "from": "Codex's Work/pdf_intelligence/src/utils/synonyms.py",
+      "to": "json",
+      "type": "import"
+    },
+    {
+      "from": "Codex's Work/pdf_intelligence/src/utils/synonyms.py",
+      "to": "os",
+      "type": "import"
+    },
+    {
+      "from": "Codex's Work/pdf_intelligence/src/utils/synonyms.py",
+      "to": "functools",
+      "type": "import_from"
+    },
+    {
+      "from": "Codex's Work/pdf_intelligence/src/utils/synonyms.py",
+      "to": "src.utils.constants",
+      "type": "import_from"
+    },
+    {
+      "from": "Codex's Work/pdf_intelligence/src/search/query_parser.py",
+      "to": "re",
+      "type": "import"
+    },
+    {
+      "from": "Codex's Work/pdf_intelligence/src/search/query_parser.py",
+      "to": "src.search.stemmer",
+      "type": "import_from"
+    },
+    {
+      "from": "Codex's Work/pdf_intelligence/src/search/query_parser.py",
+      "to": "src.utils.synonyms",
+      "type": "import_from"
+    },
+    {
+      "from": "Codex's Work/pdf_intelligence/src/search/bm25.py",
+      "to": "math",
+      "type": "import"
+    },
+    {
+      "from": "Codex's Work/pdf_intelligence/src/search/bm25.py",
+      "to": "src.index.schema",
+      "type": "import_from"
+    },
+    {
+      "from": "Codex's Work/pdf_intelligence/src/search/searcher.py",
+      "to": "src.index.schema",
+      "type": "import_from"
+    },
+    {
+      "from": "Codex's Work/pdf_intelligence/src/search/searcher.py",
+      "to": "src.search.query_parser",
+      "type": "import_from"
+    },
+    {
+      "from": "Codex's Work/pdf_intelligence/src/search/searcher.py",
+      "to": "src.search.bm25",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/setup.py",
+      "to": "setuptools",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/tests/test_flow.py",
+      "to": "os",
+      "type": "import"
+    },
+    {
+      "from": "pdf_intelligence/tests/test_flow.py",
+      "to": "sys",
+      "type": "import"
+    },
+    {
+      "from": "pdf_intelligence/tests/test_flow.py",
+      "to": "src.index.indexer",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/tests/test_flow.py",
+      "to": "src.search.searcher",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/tests/test_flow.py",
+      "to": "src.index.schema",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/tests/test_flow.py",
+      "to": "reportlab.pdfgen",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/tests/test_flow.py",
+      "to": "reportlab",
+      "type": "import"
+    },
+    {
+      "from": "pdf_intelligence/src/main.py",
+      "to": "os",
+      "type": "import"
+    },
+    {
+      "from": "pdf_intelligence/src/main.py",
+      "to": "sys",
+      "type": "import"
+    },
+    {
+      "from": "pdf_intelligence/src/main.py",
+      "to": "tkinter",
+      "type": "import"
+    },
+    {
+      "from": "pdf_intelligence/src/main.py",
+      "to": "src.ui.app_ui",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/utils/file_hash.py",
+      "to": "hashlib",
+      "type": "import"
+    },
+    {
+      "from": "pdf_intelligence/src/utils/constants.py",
+      "to": "os",
+      "type": "import"
+    },
+    {
+      "from": "pdf_intelligence/src/utils/synonyms.py",
+      "to": "json",
+      "type": "import"
+    },
+    {
+      "from": "pdf_intelligence/src/utils/synonyms.py",
+      "to": "os",
+      "type": "import"
+    },
+    {
+      "from": "pdf_intelligence/src/utils/synonyms.py",
+      "to": "functools",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/utils/synonyms.py",
+      "to": "src.utils.constants",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/search/facets.py",
+      "to": "src.index.schema",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/search/query_parser.py",
+      "to": "re",
+      "type": "import"
+    },
+    {
+      "from": "pdf_intelligence/src/search/query_parser.py",
+      "to": "src.search.stemmer",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/search/query_parser.py",
+      "to": "src.utils.synonyms",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/search/stemmer.py",
+      "to": "snowballstemmer",
+      "type": "import"
+    },
+    {
+      "from": "pdf_intelligence/src/search/stemmer.py",
+      "to": "src.core.tokenizer",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/search/bm25.py",
+      "to": "math",
+      "type": "import"
+    },
+    {
+      "from": "pdf_intelligence/src/search/bm25.py",
+      "to": "src.index.schema",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/search/searcher.py",
+      "to": "src.index.schema",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/search/searcher.py",
+      "to": "src.search.query_parser",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/search/searcher.py",
+      "to": "src.search.bm25",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/ui/app_ui.py",
+      "to": "tkinter",
+      "type": "import"
+    },
+    {
+      "from": "pdf_intelligence/src/ui/app_ui.py",
+      "to": "tkinter",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/ui/app_ui.py",
+      "to": "threading",
+      "type": "import"
+    },
+    {
+      "from": "pdf_intelligence/src/ui/app_ui.py",
+      "to": "os",
+      "type": "import"
+    },
+    {
+      "from": "pdf_intelligence/src/ui/app_ui.py",
+      "to": "src.ui.styles",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/ui/app_ui.py",
+      "to": "src.ui.dialogs",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/ui/app_ui.py",
+      "to": "src.index.indexer",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/ui/app_ui.py",
+      "to": "src.search.searcher",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/ui/app_ui.py",
+      "to": "src.index.schema",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/ui/dialogs.py",
+      "to": "tkinter",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/ui/styles.py",
+      "to": "tkinter",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/core/tokenizer.py",
+      "to": "re",
+      "type": "import"
+    },
+    {
+      "from": "pdf_intelligence/src/core/pdf_parser.py",
+      "to": "os",
+      "type": "import"
+    },
+    {
+      "from": "pdf_intelligence/src/core/pdf_parser.py",
+      "to": "pdfplumber",
+      "type": "import"
+    },
+    {
+      "from": "pdf_intelligence/src/core/chunker.py",
+      "to": "re",
+      "type": "import"
+    },
+    {
+      "from": "pdf_intelligence/src/core/chunker.py",
+      "to": "src.core.tokenizer",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/core/epub_parser.py",
+      "to": "ebooklib",
+      "type": "import"
+    },
+    {
+      "from": "pdf_intelligence/src/core/epub_parser.py",
+      "to": "ebooklib",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/core/epub_parser.py",
+      "to": "bs4",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/index/indexer.py",
+      "to": "os",
+      "type": "import"
+    },
+    {
+      "from": "pdf_intelligence/src/index/indexer.py",
+      "to": "src.index.schema",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/index/indexer.py",
+      "to": "src.core.pdf_parser",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/index/indexer.py",
+      "to": "src.core.epub_parser",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/index/indexer.py",
+      "to": "src.core.chunker",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/index/indexer.py",
+      "to": "src.utils.file_hash",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/index/indexer.py",
+      "to": "src.core.tokenizer",
+      "type": "import_from"
+    },
+    {
+      "from": "pdf_intelligence/src/index/schema.py",
+      "to": "sqlite3",
+      "type": "import"
+    },
+    {
+      "from": "pdf_intelligence/src/index/schema.py",
+      "to": "os",
+      "type": "import"
+    },
+    {
+      "from": "pdf_intelligence/src/index/schema.py",
+      "to": "src.utils.constants",
+      "type": "import_from"
+    }
+  ]
+}
